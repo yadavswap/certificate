@@ -20,7 +20,12 @@ Route::get('/index', function () {
 Route::get('pdf-generate','PDFController@PDFgenerate');
 Route::post('/student/store','StudentController@store')->name('studentstore');
 Route::get('student', 'StudentController@index');
+Route::get('yadavswap', 'StudentController@showdata');
 
+
+// Route::get('/yadavswap', function () {
+//     return view('data');
+// });
 Route::get('/generate/{id}','StudentController@generate');
 Route::post('generate','MarkController@generate');
 Auth::routes();

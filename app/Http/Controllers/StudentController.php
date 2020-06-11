@@ -12,10 +12,17 @@ class StudentController extends Controller
 {
     public function index()
     {
-        //
+        
         $studentsdata = Student::all();
         // $studentsdata =['name'=>'swapnil'];
         return view('/student',compact('studentsdata'));
+    }
+    public function showdata()
+    {
+        //
+        $studentsdata = Student::all();
+        // $studentsdata =['name'=>'swapnil'];
+        return view('/yadavswap',compact('studentsdata'));
     }
         /**
      * Store a newly created resource in storage.

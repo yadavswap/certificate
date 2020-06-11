@@ -8,6 +8,6 @@ class Student extends Model
 {
     //
     protected $fillable = [
-        'name', 'email', 
+        'name', 'email', 'mobile',
     ];
 }
