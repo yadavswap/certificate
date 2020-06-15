@@ -38,11 +38,13 @@ class StudentController extends Controller
          $students->name= $request->name;
 
          $students->email = $request->email;
+         $students->email_one = $request->email_one;
+
          $students->mobile = $request->mobile;
 
          $saved=$students->save();
          if($saved){
-             if($students->email==='pro1')
+             if($students->email==='ainet')
             //  return view('/welcome');
                 return redirect('generate/'.$students->id);
               else
@@ -65,14 +67,16 @@ class StudentController extends Controller
         $student = \App\Student::find($id);
 
         $pdf = new PDF();
+        $pdf->AddFont('Calligrapher','','call.php');
+
         $pdf->AliasNbPages();
-        $pdf->setSourceFile("Certificate MIET.pdf");
+        $pdf->setSourceFile("CertificateAINET2.pdf");
         $tpl = $pdf->importPage(1);
         $pdf->AddPage("N");
         $pdf->useTemplate($tpl);
-        $pdf->SetFont('Arial','I',24);
+        $pdf->SetFont('Calligrapher','',30);
 
-        $pdf->Text(120,77,$student->name);
+        $pdf->Text(110,96,$student->name);
         // $pdf->Text(122,172.10,$marksheet->stud_id);
         // $pdf->Text(131,178.10,$marksheet->stud_name);
         // $pdf->Text(134,185.10,$marksheet->adhar_no);
@@ -89,7 +93,7 @@ class PDF extends FPDI {
     function PutLink($URL, $txt)
     {
         // Put a hyperlink
-        $this->SetTextColor(0,200,255);
+        $this->SetTextColor(0,50,100);
         $this->SetStyle('U',true);
         $this->Write(5,$txt,$URL);
         $this->SetStyle('U',false);

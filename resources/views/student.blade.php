@@ -161,22 +161,28 @@ a{color:inherit;text-decoration:none}
 
 			<div class="sign-in-htm">
 				<div class="group">
-					<label for="name" class="label">Enter Full Name</label>
+					<label for="name" class="label">Enter Full Name (To be printed on certificate)</label>
 					<input id="name" type="text" class="input" name="name">
+				</div>
+				<div class="group">
+					<label for="email_one" class="label">Email ID</label>
+					<input id="email_one" type="email" class="input" data-type="email" name="email_one">
+				</div>
+				<div class="group">
+					<label for="mobile" class="label">Contact No</label>
+					<input id="mobile" type="mobile" class="input" data-type="mobile" name="mobile">
 				</div>
 				<div class="group">
 					<label for="email" class="label">Access Code</label>
 					<input id="email" type="password" class="input" data-type="email" name="email">
 				</div>
-				<div class="group">
-						<label for="mobile" class="label">Mobile No</label>
-						<input id="mobile" type="mobile" class="input" data-type="mobile" name="mobile">
-					</div>
+			
 				
 				<div class="group">
 					<input type="submit" class="button" value="Submit">
 				</div>
 				<div class="hr"></div>
+				<h3 style="background-color:powderblue;">For queries : certificatecouncil@gmail.com</h3>
 			
 			</div>
 			

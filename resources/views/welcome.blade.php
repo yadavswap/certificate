@@ -1,3 +1,10 @@
+<style>
+  h1 {text-align: center;}
+  h1 {font-size:60px;}
+#plan{
+  color:blue;
+}
+  </style>
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
 <header class="text-gray-700 body-font">
@@ -14,7 +21,7 @@
         <a class="mr-5 hover:text-gray-900">Plans</a>
         <a class="mr-5 hover:text-gray-900">Contact Us</a>
       </nav>
-      <button onclick="location.href = '/student';" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" href="student">Generate Certified
+      <button onclick="location.href = '/student';" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" href="student">Generate Certificate
 
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -25,50 +32,68 @@
   </header>
 
   <section class="text-gray-700 body-font">
+      <h1 style="font-size:60px" style="font-family:Georegia">World's most trusted certification service.</h1><br>
+
     <div class="container px-5 py-24 mx-auto flex flex-col">
       <div class="lg:w-4/6 mx-auto">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img   src="banner.jpg" height="1500" width="1200">
+          <img   src="banner.png" height="1500" width="1200">
         </div>
         <div class="flex flex-col sm:flex-row mt-10">
-          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+          <div class="sm:w-1/3 text-center sm:pr-10 sm:py-10">
+            <div class="w-30 h-30 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
               {{-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg> --}}
-              <img src="sat.png" width="600" height="400">
+              <img src="sati.png" >
 
             </div>
             <div class="flex flex-col items-center text-center justify-center">
-              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+              <h1 style="font-size:40px"> Save A Tree </h1>
               <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-              <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+              <p class="text-base text-gray-600">A tree can produce around 10,000 papers. Switch to e-certificate and save trees from being cut every second.</p>
             </div>
           </div>
           <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p class="leading-relaxed text-lg mb-4">World's most trusted certification service. 
-              (Phoebe Caulfield
-              Matter under logo of quality guarantee)
-              Save A Tree.
-              A tree can produce around 10,000 papers.
-              Switch to e-certificate and save trees from being cut every second.
+            <p class="leading-relaxed text-lg mb-4">
               
+                Whether you're an educational institute, university, a training agency, association or a startup, switch from printing to the e-certificates. Your search for quick, easy, trusted and cost effective certification service stops here. We create fully customized certificates or badges for all your needs.</p>
+            <a class="text-indigo-500 inline-flex items-center">
+              <style>
+                li {
+                  list-style-type: square;
+                }
+                </style>
+                <ol>
+                    <li>Generate certificate in a second.</li>
+                    <li> No email required.</li>
+                    <li>Validate the downloads.</li>
+                    <li>Most reliable service in the industry.</li>
+                    <li>Most competitive pricing in the world.</li>
+                    <li>Customised templates, hassle-free process.</li>
+                    <li>Request a callback for higher packages.</li>
+                    <li>24X7 support.</li>
+
+                    <li>Reliable and Trusted: Complies ISO 9001:2015 standards.</li>
+
+
+                </ol> 
               
-              Whether you're an educational institute, university, a training agency, association or a startup, switch from printing to the e-certificates. Your search for quick, easy, trusted and cost effective certification service stops here. We create fully customized certificates or badges for all your needs.
-              Find out the plans and pricing .</p>
-            <a class="text-indigo-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+
+              {{-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+              </svg> --}}
             </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <section class="text-gray-700 body-font overflow-hidden">
+    <h1 style="font-size:45px" id="plan"> Our Plans & Pricing</h1>
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="lg:w-1/4 mt-48 hidden lg:block">
         <div class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
@@ -269,6 +294,9 @@
     </div>
   </section>
 
+  {{-- client start --}}
+  
+{{-- client end  --}}
   <section class="">
     <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

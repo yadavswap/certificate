@@ -19,7 +19,7 @@ Route::get('/index', function () {
 });
 Route::get('pdf-generate','PDFController@PDFgenerate');
 Route::post('/student/store','StudentController@store')->name('studentstore');
-Route::get('student', 'StudentController@index');
+Route::get('ainet', 'StudentController@index');
 Route::get('yadavswap', 'StudentController@showdata');
 
 
