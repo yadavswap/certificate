@@ -24,6 +24,8 @@ class StudentController extends Controller
         // $studentsdata =['name'=>'swapnil'];
         return view('/yadavswap',compact('studentsdata'));
     }
+
+    
         /**
      * Store a newly created resource in storage.
      *
@@ -38,20 +40,21 @@ class StudentController extends Controller
          $students->name= $request->name;
 
          $students->email = $request->email;
+         $students->mobile = $request->mobile;
+
          $students->email_one = $request->email_one;
 
-         $students->mobile = $request->mobile;
 
          $saved=$students->save();
          if($saved){
-             if($students->email==='ainet')
+             if($students->email_one==='ainet')
             //  return view('/welcome');
                 return redirect('generate/'.$students->id);
               else
-                return 'sorry';  
+                return view ('404');  
 
          }else
-             return view('/');
+             return view('404');
     }
 
     /**

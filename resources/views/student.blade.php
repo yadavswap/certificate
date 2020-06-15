@@ -156,6 +156,7 @@ a{color:inherit;text-decoration:none}
 	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Get Certificate</label>
 		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+		
         <form class="login-form" action="/student/store" method="post" >
             @csrf
 
@@ -164,17 +165,25 @@ a{color:inherit;text-decoration:none}
 					<label for="name" class="label">Enter Full Name (To be printed on certificate)</label>
 					<input id="name" type="text" class="input" name="name">
 				</div>
+				
 				<div class="group">
-					<label for="email_one" class="label">Email ID</label>
-					<input id="email_one" type="email" class="input" data-type="email" name="email_one">
+					
+					<label for="email" class="label">Email ID</label>
+					<input id="email" type="email" class="input"data-type="email" name="email" >
+					@if($errors->has('email'))
+					<div class="error">{{ $errors->first('email') }}</div>
+					@endif
+
+					
+				
 				</div>
 				<div class="group">
 					<label for="mobile" class="label">Contact No</label>
 					<input id="mobile" type="mobile" class="input" data-type="mobile" name="mobile">
 				</div>
 				<div class="group">
-					<label for="email" class="label">Access Code</label>
-					<input id="email" type="password" class="input" data-type="email" name="email">
+					<label for="email_one" class="label">Access Code</label>
+					<input id="email_one" type="password" class="input" data-type="email_one" name="email_one">
 				</div>
 			
 				
