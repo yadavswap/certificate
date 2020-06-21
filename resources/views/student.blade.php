@@ -1,4 +1,3 @@
-
 <style>
     body{
 	margin:0;
@@ -10,7 +9,6 @@
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
-
 .login-wrap{
 	width:100%;
 	margin:auto;
@@ -141,7 +139,6 @@ a{color:inherit;text-decoration:none}
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
 	transform:rotate(0);
 }
-
 .hr{
 	height:2px;
 	margin:60px 0 50px 0;
@@ -165,14 +162,16 @@ a{color:inherit;text-decoration:none}
 					<label for="name" class="label">Enter Full Name (To be printed on certificate)</label>
 					<input id="name" type="text" class="input" name="name">
 				</div>
+				<div class="group">
+					<label for="place" class="label">Enter Place (To be printed on certificate)</label>
+					<input id="place" type="text" class="input" name="place">
+				</div>
 				
 				<div class="group">
 					
 					<label for="email" class="label">Email ID</label>
 					<input id="email" type="email" class="input"data-type="email" name="email" >
-					@if($errors->has('email'))
-					<div class="error">{{ $errors->first('email') }}</div>
-					@endif
+				
 
 					
 				

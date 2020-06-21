@@ -38,6 +38,8 @@ class StudentController extends Controller
          //
          $students = new Student();
          $students->name= $request->name;
+         $students->place= $request->place;
+
 
          $students->email = $request->email;
          $students->mobile = $request->mobile;
@@ -73,13 +75,16 @@ class StudentController extends Controller
         $pdf->AddFont('Calligrapher','','call.php');
 
         $pdf->AliasNbPages();
-        $pdf->setSourceFile("CertificateAINET2.pdf");
+        $pdf->setSourceFile("jmpc.pdf");
         $tpl = $pdf->importPage(1);
         $pdf->AddPage("N");
         $pdf->useTemplate($tpl);
-        $pdf->SetFont('Calligrapher','',30);
+        $pdf->SetFont('Helvetica','I',20);
+        $pdf->SetTextColor(9, 34, 170 );
 
-        $pdf->Text(110,96,$student->name);
+        $pdf->Text(70,140,$student->name);
+        $pdf->Text(20,151,$student->place);
+
         // $pdf->Text(122,172.10,$marksheet->stud_id);
         // $pdf->Text(131,178.10,$marksheet->stud_name);
         // $pdf->Text(134,185.10,$marksheet->adhar_no);
